@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CART QUANTITY
+        </title>
+    </head>
+<body>
+
+  <button onclick="
+    console.log(`Cart quantity: ${cartQuantity}`);
+    ">
+    Show Quantity
+  </button>
+
+  <button onclick="
+  cartQuantity = cartQuantity + 1;
+  console.log(`Cart quantity: ${cartQuantity}`)
+  ">
+    Add to Cart
+  </button>
+
+  <button onclick="
+  cartQuantity = cartQuantity + 2;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  ">
+    +2
+  </button>
+
+ <!-- 
+  Shortcut for re-assigning values=
+  cartQuantity += 2;
+
+  cartQuantity ++; 
+  (For adding 1)
+  -->
+
+  <button onclick="
+  cartQuantity = cartQuantity + 3;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  ">
+    +3
+  </button>
+
+  <button onclick="
+  cartQuantity = 0;
+  console.log('Cart was reset.');
+  console.log(`Cart quantity: ${cartQuantity}`);
+  ">
+    Reset Cart
+  </button>
+
+  <script>
+    let cartQuantity = 0;
+  </script>
+</body>
+</html>
